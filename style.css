@@ -76,7 +76,6 @@ li {
     justify-content: start;
 }
 
-
 .user-alert, 
 .action-buttons {
     display: grid;
@@ -84,10 +83,6 @@ li {
     column-gap: 1.5rem;
     justify-content: center;
     align-items: center;
-}
-
-.placeholder-small {
-    border-radius: 50%; 
 }
 
 .action-buttons {
@@ -118,6 +113,32 @@ li {
 .trending-users p:last-of-type {
     align-self: start; 
 }
+
+.placeholder, 
+.placeholder-small {
+    border: 1px solid #ccc;
+    border-radius: 50%; 
+}
+
+.placeholder img, 
+.placeholder-small img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.placeholder {
+    height: 4.5rem;
+    width: 4.5rem;  
+}
+
+.placeholder-small {
+    height: 3rem; 
+    width: 3rem; 
+}
+
+
 .main {
     grid-row: 2 / 3; 
     background-color: var(--temp-bg-color-main);
