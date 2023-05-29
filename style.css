@@ -95,7 +95,7 @@ body {
 }
 
 .sidebar svg {
-    fill: var(--bg-color-header);
+    fill: var(--bg-color-header);   
 }
 
 
@@ -120,12 +120,19 @@ body {
     align-items: center; 
 }
 
+.dashboard svg {
+    width: 2.5rem; 
+    height: auto;
+}
+
 .menu li {
     margin-bottom: 1rem; 
 }
 
 .menu svg {
     justify-self: center;
+    width: 1.25rem;
+    height: auto;
 }
 
 li {
@@ -180,6 +187,7 @@ input[type="search"] {
     padding: 0.5rem; 
     width: 5rem; 
     background-color: var(--bg-color-sidebar, lightcoral);
+    color: var(--bg-color-header);
 }
 
 .user-info, 
