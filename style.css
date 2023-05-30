@@ -148,6 +148,11 @@ li {
     border-bottom: 8px double var(--border-color);
 }
 
+.header p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
 .search-bar, 
 .user-info {
     padding-left: 2rem;
@@ -171,6 +176,7 @@ input[type="search"] {
     border-radius: 15px;
     width: 80%;
     height: 1.75rem; 
+    padding: 0 0.75rem;
 }
 
 .user-alert, 
@@ -182,11 +188,6 @@ input[type="search"] {
     align-items: center;
 }
 
-.user-alert p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-}
-
 .action-buttons button {
     border: none; 
     border-radius: 25px;
@@ -194,6 +195,14 @@ input[type="search"] {
     width: 5rem; 
     background-color: var(--bg-color-sidebar, lightcoral);
     color: var(--bg-color-header);
+}
+
+.action-buttons button:hover {
+    background-color: #CB5458;
+}
+
+.action-buttons button:active {
+    background-color: #833639;
 }
 
 .user-info, 
