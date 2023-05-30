@@ -19,15 +19,6 @@
     --smallest-font-size: 0.875rem; 
 }
 
-/* open-sans-regular - latin */
-@font-face {
-    font-display: optional; 
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('assets/fonts/open-sans-v35-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
   /* open-sans-800 - latin */
 @font-face {
     font-display: swap; 
@@ -46,6 +37,14 @@
     src: url('assets/fonts/pt-sans-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+  /* pt-sans-700 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('assets/fonts/pt-sans-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 
 h1, h2, h3, h4, li {
     font-family: 'Open Sans', sans-serif;
@@ -149,8 +148,8 @@ li {
 }
 
 .header p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
 }
 
 .search-bar, 
@@ -358,6 +357,8 @@ input[type="search"] {
 
 .credit a {
     color: inherit;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
 }
 
 
