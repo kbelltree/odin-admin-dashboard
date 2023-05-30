@@ -14,6 +14,7 @@
     --bg-color-header: white;
     --main-font-color: #2F2C23;
     --border-color: #F6BFBC;
+    --placeholder-color: #BFA5A4;
 
     --smallest-font-size: 0.875rem; 
 }
@@ -145,6 +146,7 @@ li {
     display: grid; 
     grid-template-columns: 2fr 1fr; 
     gap: 0.75rem; 
+    border-bottom: 8px double var(--border-color);
 }
 
 .search-bar, 
@@ -220,7 +222,7 @@ input[type="search"] {
 
 .placeholder, 
 .placeholder-small {
-    border: 1px solid gainsboro;
+    border: 1px solid var(--placeholder-color, gainsboro);
     border-radius: 50%; 
 }
 
@@ -273,7 +275,8 @@ input[type="search"] {
     background-color: var(--bg-color-header);
     padding: 1.5rem; 
     overflow: hidden;
-    border: 3px solid var(--border-color, peachpuff); 
+    border: 5px solid var(--border-color, peachpuff);
+    border-radius: 10px; 
 }
 
 .cards {
@@ -302,8 +305,6 @@ input[type="search"] {
     background-color: transparent;
     border: none;
 }
-
-
 
 .sub-information {
     display: grid; 
