@@ -37,14 +37,14 @@
     src: url('assets/fonts/pt-sans-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-  /* pt-sans-700 - latin */
+/* pt-sans-700 - latin */
   @font-face {
     font-display: swap;
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
     src: url('assets/fonts/pt-sans-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+}
 
 h1, h2, h3, h4, li {
     font-family: 'Open Sans', sans-serif;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, li {
 }
 
 h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
 }
 
 h2 {
@@ -72,6 +72,13 @@ body {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     color: var(--main-font-color);
+}
+
+/* utility class for bold face */
+.bold-body-font {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: inherit;
 }
 
 .container {
@@ -137,7 +144,6 @@ li {
     height: auto;
 }
 
-
 .header {
     grid-row: 1 / 2; 
     background-color: var(--bg-color-header);
@@ -145,11 +151,6 @@ li {
     grid-template-columns: 2fr 1fr; 
     gap: 0.75rem; 
     border-bottom: 8px double var(--border-color);
-}
-
-.header p {
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 700;
 }
 
 .search-bar, 
@@ -191,9 +192,11 @@ input[type="search"] {
     border: none; 
     border-radius: 25px;
     padding: 0.5rem; 
-    width: 5rem; 
+    width: 5.25rem; 
     background-color: var(--bg-color-sidebar, lightcoral);
     color: var(--bg-color-header);
+    font-size: 1.25rem; 
+    font-weight: 700;
 }
 
 .action-buttons button:hover {
@@ -349,16 +352,15 @@ input[type="search"] {
 }
 
 .credit {
+    padding-top: 1.5rem; 
     grid-column: 1 / -1; 
     font-size: var(--smallest-font-size);
     text-align: center;
-    color: var(--placeholder-color, gainsboro)
 }
 
+.credit,
 .credit a {
-    color: inherit;
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 700;
+    color: rgb(0, 0, 0, 0.55);
 }
 
 
