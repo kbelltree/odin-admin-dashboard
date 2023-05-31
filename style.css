@@ -108,6 +108,7 @@ body {
 li {
     list-style-type: none;
 }
+
 /* redundant styling
 
    .sidebar > div {
@@ -142,6 +143,15 @@ li {
     justify-self: center;
     width: 1.25rem;
     height: auto;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    color:rgb(0, 0, 0, 0.55);
 }
 
 .header {
@@ -319,6 +329,12 @@ input[type="search"] {
 .action-icon-buttons {
     background-color: transparent;
     border: none;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.action-icon-buttons:hover {
+    transform: scale(1.2);
 }
 
 .sub-information {
