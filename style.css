@@ -6,9 +6,6 @@
 }
 
 :root {
-    /* --temp-bg-color-sidebar: lightpink; 
-    --temp-bg-color-header: mistyrose;
-    --temp-bg-color-main: mintcream; */
     --bg-color-sidebar: #EF6367;
     --bg-color-main: #FFF5F4;
     --bg-color-header: white;
@@ -109,19 +106,6 @@ li {
     list-style-type: none;
 }
 
-/* redundant styling
-
-   .sidebar > div {
-    display: grid; 
-    grid-template-rows: auto 1fr;
-} */
-
-/* redundant styling
-
-   .sidebar .credit {
-    align-self: end; 
-} */
-
 .dashboard, 
 .menu li {
     display: grid;
@@ -160,7 +144,7 @@ li {
     display: grid; 
     grid-template-columns: 2fr 1fr; 
     gap: 0.75rem; 
-    border-bottom: 8px double var(--border-color);
+    border-bottom: 8px double var(--border-color, peachpuff);
 }
 
 .search-bar, 
@@ -275,7 +259,6 @@ input[type="search"] {
     display: grid;
     grid-template-columns: 5fr 2fr; 
     gap: 1rem;
-    /* grid-auto-rows: auto;  */
 }
 
 .main h3 {
