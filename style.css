@@ -112,7 +112,7 @@ li {
 }
 
 .dashboard, 
-.menu li {
+.menu-link {
     display: grid;
     grid-template-columns: 2rem auto;
     gap: 0.5rem;
