@@ -73,10 +73,9 @@ p {
 body {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    color: var(--main-font-color);
+    background-color: var(--bg-color-sidebar, salmon);
 }
 
-/* utility class for bold face */
 .bold-body-font {
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
@@ -94,6 +93,12 @@ body {
     padding: 1.5rem;
 }
 
+.sticky-position {
+    position: sticky;
+    top: 0;
+    align-self: start;   
+}
+
 .sidebar {
     grid-row: 1 / 3; 
     background-color: var(--bg-color-sidebar, lightcoral);
@@ -101,6 +106,9 @@ body {
     gap: 2rem; 
     align-content:start;
     color: var(--bg-color-header);
+/* to fill the entire space for .sticky-effect setting */
+    height: 100vh; 
+    height: 100dvh;
 }
 
 .sidebar svg {
